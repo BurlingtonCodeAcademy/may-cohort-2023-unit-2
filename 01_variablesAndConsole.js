@@ -63,3 +63,13 @@ console.log(today, javaScript);
 
 // javaScript = "Super!";
 console.log(today, javaScript); // TypeError
+
+console.log("This message is a string");
+let name = "Your name goes here";
+console.log("Log: ", name);
+
+console.warn("This is a warning")
+let warning = "uh oh";
+console.warn("warn: ", warning);
+
+console.error("This is an error message");
