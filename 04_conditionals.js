@@ -200,3 +200,32 @@ number === 0 ?
     console.log("Hi") : 
     console.log("goodbye");
 
+//! QUIZ REFLECTION
+//* First
+let myNum = 17;
+
+if(myNum > 20) {
+    console.log("Not yet 20");
+} else if (myNum >= 20) {
+    console.log("Over 20");
+}
+
+//* Second
+let temp = 68;
+
+let response = temp > 70 ? "It is summer" : "still spring";
+
+temp > 70 ? 
+    console.log("It is summer") : 
+    console.log("still spring");
+// console.log(response);
+
+/* 
+    expression ? true : false; 
+    
+    expression ? true : expression ? true : false;
+    (if)                (else if)           (else)
+
+    expression ? true : expression ? true : expression ? true : false;
+    (if)                (else if)           (else if)           (else)
+*/    
