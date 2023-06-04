@@ -179,25 +179,26 @@ console.log(`${villain.baddie} has appeared!`);
 
 do {
 
-
     console.log(`${villain.baddie} hit Spider-Man!`);
     spidyHP--;
     console.log(`Spider-Man HP: ${spidyHP}`);
 
-    if(villain.baddie == "Thug") {
+    if(villain.baddie === "Thug") {
         console.log(`Spider-Man webs ${villain.baddie}`)
         // break;
     }
 
     let spidyHit = Math.floor(Math.random() * 3); 
+
     console.log(`Spider-Man hits ${villain.baddie} for ${spidyHit} damage!!`);
-    villain.hp -= spidyHP;
+    villain.hp -= spidyHit;
     console.log(`Villain HP: ${villain.hp}`);
 
     if(spidyHP === 0) {
         break; // breaks us out of the loop based on if the condition is met.
     }
 
-} while (villain.hp > 0)
+} while (villain.hp > 0);
 
 villain.hp <= 0 ? console.log(`Spider-Man captures ${villain.baddie}`) : console.log(`${villain.baddie} has taken down Spider-Man.`);
+

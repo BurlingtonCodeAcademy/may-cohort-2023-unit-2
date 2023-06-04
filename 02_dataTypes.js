@@ -63,8 +63,45 @@ let list = ['item 1', 'item 2', 'item 3', true, 3];
     3: each item, regardless of datatype, is separated by commas
 */
 
+console.log(list[1])
 console.log(list);
 
 //! DataType Literals
 let car = "Ford";
 let dec = 12;
+
+let neighborhood = [
+    {
+        door: "red",
+        rooms: [
+            "mstr bed", "bed", "kitchen"
+        ]
+    },
+    {
+        door: "blue",
+        rooms: [
+            "mstr bed", "bed", "bed", "kitchen"
+        ]
+    },
+    {
+        door: "green",
+        rooms: [
+            "mstr bed", "kitchen"
+        ]
+    },
+    {
+        door: "yellow",
+        rooms: [
+            "mstr bed", "bed", "kitchen"
+        ]
+    },
+]
+
+// console.log(neighborhood[1].rooms[2]);
+console.log(neighborhood[4]);
+neighborhood.push({
+    door: "orange",
+    rooms: []
+});
+
+console.log(neighborhood[4]);
